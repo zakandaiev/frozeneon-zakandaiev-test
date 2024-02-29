@@ -1,0 +1,11 @@
+:root {
+  --font: "Inter", sans-serif;
+
+  @each $key, $val in $font-weight-list {
+    #{'--font-' + $key}: #{$val};
+  }
+
+  @each $key, $val in $z-index-list {
+    --zi-#{$key}: #{$val};
+  }
+}

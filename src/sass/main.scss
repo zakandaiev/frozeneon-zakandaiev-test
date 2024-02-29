@@ -1,0 +1,42 @@
+/* ==========  Util  ========== */
+@import "util/_all";
+
+/* ==========  Config  ========== */
+@import "config/_all";
+
+/* ==========  Global  ========== */
+html,
+body {
+  position: relative;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+
+  font-family: var(--font);
+  font-weight: var(--font-regular);
+  line-height: 1.5;
+
+  &.disable-scroll {
+    touch-action: none;
+    overflow: hidden;
+  }
+}
+
+/* ==========  Custom  ========== */
+.page-content {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
