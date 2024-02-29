@@ -31,5 +31,5 @@ npm run js:lint
 ### Lint with [StyleLint](https://stylelint.io/)
 
 ```sh
-npm run sass:lint
+npm run lint:sass
 ```
